@@ -3,12 +3,11 @@ import cloud from "d3-cloud";
 import result from "../data/result.json";
 import { drawCloud, drawHistgram } from "./draw";
 const layout = [500, 500];
-
 var wordCloud = cloud()
     .size([500, 500])
     .words(
         result.map(function(d) {
-            return { text: d.text, size: d.size * 5, test: "haha" };
+            return { text: d.text, size: d.size, test: "haha" };
         })
     )
     .padding(5)
@@ -21,5 +20,5 @@ var wordCloud = cloud()
     })
     .on("end", drawCloud).start();
 
-    
+
 drawHistgram(result);

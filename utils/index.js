@@ -10,7 +10,8 @@ const request = (url) => {
 			hostname: parse(url).hostname,
 			path: parse(url).pathname,
 			headers: {
-				"User-Agent": ua
+				"User-Agent": ua,
+				"Referer":"http://www.mzitu.com/all/"
 			}
 		}, (res) => {
 			const buffer = []

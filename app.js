@@ -29,6 +29,7 @@ const getMeiziInfo = (url) => {
 		console.log("\033[91m 正在分析页面。。。")
 
 		request(url).then((html) => {
+			console.log(html);
 			const areaHTML = html.match(/<(ul)\sid="pins(.|\n)+<\/ul>/)[0]
 
 			titles = areaHTML.match(/>([\u4e00-\u9fff]|\w)+[^<']+<\/a/g) // 文件夹名
@@ -226,16 +227,15 @@ if (program.pageIndex) {
 		targetURL = `http://www.mzitu.com/page/${program.pageIndex}`
 
 
-
 		Promise.all([createDir(`${root}/images`), getMeiziInfo(targetURL)]).then(() => {
 			startCapture()
 		})
 
 		return
 	}
-
-	targetURL = `http://www.mzitu.com/page/${program.pageIndex}`
-
+	if (program.pageIndex != 1 ) {
+		targetURL = `http://www.mzitu.com/page/${program.pageIndex}/`
+	}
 	Promise.all([createDir(`${root}/images`), getMeiziInfo(targetURL)]).then(() => {
 		startCapture()
 	})

@@ -12316,9 +12316,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 var layout = [500, 500];
-
 var wordCloud = (0, _d3Cloud2.default)().size([500, 500]).words(_result2.default.map(function (d) {
-    return { text: d.text, size: d.size * 5, test: "haha" };
+    return { text: d.text, size: d.size, test: "haha" };
 })).padding(5).rotate(function () {
     return ~~(Math.random() * 2) * 90;
 }).font("Impact").fontSize(function (d) {
@@ -28845,7 +28844,7 @@ var spirals = {
 /* 467 */
 /***/ (function(module, exports) {
 
-module.exports = [{"text":"hello","size":23.478408614167083},{"text":"李奇涵","size":23.478408614167083},{"text":"123123","size":11.739204307083542},{"text":"xxx","size":11.739204307083542},{"text":"normally","size":11.739204307083542},{"text":"words","size":11.739204307083542},{"text":"帅哥","size":10.9562386728},{"text":"咕噜噜","size":10.8096351986},{"text":"斯蒂芬","size":10.3743171274}]
+module.exports = [{"text":"性感","size":121},{"text":"美女","size":72},{"text":"写真","size":70},{"text":"熟女","size":55},{"text":"极品","size":45},{"text":"巨乳","size":44},{"text":"甜美","size":36},{"text":"黑丝","size":33},{"text":"校服","size":33},{"text":"撩人","size":33},{"text":"诱惑","size":32},{"text":"尤物","size":30},{"text":"风骚","size":30},{"text":"火辣","size":30},{"text":"销魂","size":30},{"text":"清纯","size":30},{"text":"少妇","size":27},{"text":"小姐姐","size":24},{"text":"诱人","size":24},{"text":"风情","size":24},{"text":"甜心","size":24},{"text":"妮丝","size":24},{"text":"美腿","size":24},{"text":"长腿","size":22},{"text":"ol","size":22},{"text":"御姐","size":22},{"text":"王雨纯","size":22},{"text":"王婉悠","size":22},{"text":"美不胜收","size":22},{"text":"廿十","size":22},{"text":"人妻","size":22},{"text":"尹菲","size":22},{"text":"solo","size":22},{"text":"胸器","size":22},{"text":"美眉","size":22},{"text":"香艳","size":22},{"text":"筱慧","size":22},{"text":"土肥","size":20},{"text":"蜜桃","size":20},{"text":"忽而","size":19},{"text":"韵味","size":18},{"text":"模特","size":18},{"text":"蜕变","size":18},{"text":"妹子","size":16},{"text":"妩媚","size":16},{"text":"罩杯","size":13},{"text":"开房","size":13},{"text":"思春","size":13},{"text":"开裆","size":13},{"text":"女优","size":13}]
 
 /***/ }),
 /* 468 */
