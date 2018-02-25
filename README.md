@@ -32,7 +32,7 @@ node app.js -p 3 //爬取第三页的
 
 ### STEP2
 
-数据分析，先对目录标题进行分词，然后根据权重统计出高频词汇，统计出的数据导出到`data/result.json`
+数据分析，先对目录标题进行分词，然后根据权重统计出高频词汇，统计出的数据导出到`data/result.json`, 生成词云和柱状图
 
 ```javascript
 node analyse.js
